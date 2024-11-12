@@ -1,0 +1,75 @@
+/* Make sure to import the Poppins Google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+/* NOTE: The body and container selectors are for display purposes only */
+/* body {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); 
+} */
+
+/* .container {
+    margin-top: 100px;;
+    margin-left: 50px;
+} */
+/* ////////////////////////////////////// */
+
+
+/* .gibbous-logo {
+    display: flex;
+    align-items: center;
+} */
+
+/* .gibbous-icon-border is an optional selector that can be wrapped
+around .gibbous-icon in the html file.
+*/
+/* .gibbous-icon-border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 248px;
+    height: 248px;
+    border: white solid 4px;
+    border-radius: 5%;
+} */
+
+.gibbous-icon {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    position: relative;
+    transform: rotate(90deg);
+    border: black solid 1px;
+}
+
+.gibbous-icon::before {
+    position: absolute;
+    content: ' ';
+    border-radius: 50%;
+    height: 53px;
+    width: 100%;
+    background-color: black;
+    margin-top: 20%;
+}
+
+.gibbous-icon::after {
+  position: absolute;
+  content: ' ';
+  border-radius: 50%;
+  height: 48px;
+  width: 100%;
+  background-color: white;
+  margin-top: 15%;
+}
+
+.gibbous-name {
+    color: black;
+    display: inline-block;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 50px;
+    margin-left: 30px; 
+}
